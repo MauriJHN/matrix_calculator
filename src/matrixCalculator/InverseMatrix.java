@@ -214,10 +214,10 @@ public class InverseMatrix extends Matrix {
 //		will store the smallest number in a column, initially has the largest number in the column
 		double shortest = getLargest(column);
 		
-		
-		
 	}
 	
-	
+	/**
+	 * this is a new javadoc
+	 */
 	
 }
