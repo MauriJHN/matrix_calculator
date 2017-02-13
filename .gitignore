@@ -2,8 +2,6 @@
 Thumbs.db
 ehthumbs.db
 
-\bin
-
 # Folder config file
 Desktop.ini
 
@@ -47,3 +45,4 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/bin/
