@@ -40,10 +40,7 @@ public class Solution implements WindowListener {
 	/** panel that contains the resulting matrix values */
 	private SolutionPanel sPanel;
 
-	/**
-	 * matrix used to iterate through all the matrices inside the list of
-	 * matrices
-	 */
+	/** iterates through all valid matrices */
 	private Matrix resultingMatrix;
 
 	/** used to link the windows with the matrix window */
@@ -53,7 +50,10 @@ public class Solution implements WindowListener {
 	private boolean success = true;
 
 	public Solution(LinkedList<MatrixWindow> matrixWindows, Operation operation) {
-
+		
+		// create a window distributor and display all windows
+		new WindowDistributor(matrixWindows).displayWindows();
+		
 		this.matrixWindows = matrixWindows;
 		matrices = new HashMap<Integer, Matrix>();
 		this.operation = operation;

@@ -27,7 +27,9 @@ public class NumberKeyInput implements KeyListener{
 			if(charEntered > '9' || charEntered < '0'){
 				
 				if(!(e.getKeyCode() != e.VK_TAB)){
+					
 					((JTextField)source).setText("");
+					
 				}
 				
 			}
